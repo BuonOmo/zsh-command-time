@@ -2,6 +2,8 @@
 
 It tells you roughly how long was your last command, without cluttering your shell.
 
+![](demo.gif)
+
 ## Installation
 
 See [INSTALL.md](INSTALL.md).
