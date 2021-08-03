@@ -8,7 +8,7 @@ _ct_precmd() {
     local stop=`date +%s`
     local start=${_ct_command_timestamp:-$stop}
     local elapsed=$(( stop - start ))
-    (( elapsed > COMMAND_TIME_THRESHOLD )) && {
+    (( elapsed >= COMMAND_TIME_THRESHOLD )) && {
 		print -P "%F{yellow}${elapsed}s%f"
 	}
 	unset _ct_command_timestamp
